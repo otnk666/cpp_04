@@ -9,7 +9,12 @@ RM = rm -rf
 SRCS_DIR = ./srcs
 INC_DIR = ./includes
 
-SRCS = $(shell find $(SRCS_DIR) -name "*.cpp")
+SRCS = $(SRCS_DIR)/Animal.cpp \
+		$(SRCS_DIR)/Cat.cpp \
+		$(SRCS_DIR)/Dog.cpp \
+		$(SRCS_DIR)/WrongAnimal.cpp \
+		$(SRCS_DIR)/WrongCat.cpp \
+		$(SRCS_DIR)/main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
